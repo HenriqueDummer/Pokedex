@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/72d08a353f.js" crossorigin="anonymous"></script>
+    <title>Pokédex</title>
+</head>
+<body>
+    <main>
+        <div class="pokedex">
+            <img src="images/pokedex.png" alt="pokedex">
+
+            <img src="#" alt="pokemon" class="pokemon_img">
+            <h2 class="pokemon_name"><span class="id"></span> - <span class="name"></span></h2>
+
+            <form class="form">
+                <input class="input_search" type="search" placeholder="Número ou Nome" required>
+            </form>
+
+            <div class="buttons">
+                <button class="previous"><i class="fa-solid fa-arrow-left"></i> Anterior</button>
+                <button class="next">Próximo <i style="transform: rotate(180deg);" class="fa-solid fa-arrow-left"></i></button>
+            </div>
+        </div>
+      
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokedex {
+    display: inline-block;
+    position: relative;
+}
+
+.pokemon_img{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: scale(1.8);
+    transform: translate(-50%, 20%);
+    height: 15%;
+}
+
+.pokemon_name{
+    position: absolute;
+    text-transform: capitalize;
+    right: 25%;
+    bottom: 41%;
+}
+
+.input_search{
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-55%);
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    box-shadow: -2px 2px rgb(145, 144, 144), -3px 3px rgb(53, 53, 53);
+}
+
+.buttons{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-56%);
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.buttons button{
+    border: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 8px;
+    box-shadow: -2px 2px rgb(104, 104, 104), -3px 3px rgb(26, 26, 26);
+}
+
+.buttons button:hover{
+    cursor: pointer;
+}
+
+.buttons button:active{
+    transform: scale(0.98);
+}
