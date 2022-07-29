@@ -8,9 +8,10 @@
 }
 
 body{
-    background-image: url("images/wp8695692-pokemon-aesthetic-desktop-wallpapers.jpg");
+    background-image: url("Images/wp8695692-pokemon-aesthetic-desktop-wallpapers.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: ;
 }
 
 header{
@@ -19,13 +20,14 @@ header{
 }
 
 .logo  {
-    width: 500px;
-    position: absolute;
+    width: 80%;
+    max-width: 500px;
 }
 
 main{
     display: inline-block;
-    height: 100vh;
+    height: 80vh;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +36,11 @@ main{
 .pokedex {
     position: relative;
     top: 7%;
+   max-width: 90%;
+}
+
+.pokedex_img{
+    width: 100%;
 }
 
 .pokemon_img{
@@ -49,9 +56,11 @@ main{
     position: absolute;
     text-transform: capitalize;
     right: 25%;
-    bottom: 41%;
+    top: 53%;
     display: flex;
     align-items: center;
+    max-width: 240px;
+    font-size: 145%;
 }
 
 .pokeball{
@@ -83,8 +92,8 @@ main{
     left: 50%;
     transform: translateX(-55%);
     border: none;
-    width: 200px;
-    height: 30px;
+    width: 50%;
+    height: 5%;
     border-radius: 6px;
     box-shadow: -2px 2px rgb(145, 144, 144), -3px 3px rgb(53, 53, 53);
 }
@@ -96,15 +105,18 @@ main{
     transform: translateX(-56%);
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    width: 65%;
+    height: 5%;
 }
 
 .buttons button{
     border: none;
-    height: 40px;
-    width: 90px;
+    height: 100%;
+    width: 45%;
     border-radius: 8px;
     box-shadow: -2px 2px rgb(104, 104, 104), -3px 3px rgb(26, 26, 26);
+    font-weight: 700;
+    font-size: 80%;
 }
 
 .buttons button:hover{
