@@ -7,16 +7,33 @@
     font-family: 'Oxanium', cursive;
 }
 
-main{
-    height: 100vh;
+body{
+    background-image: url("Images/wp8695692-pokemon-aesthetic-desktop-wallpapers.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header{
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.pokedex {
+.logo  {
+    width: 500px;
+    position: absolute;
+}
+
+main{
     display: inline-block;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokedex {
     position: relative;
+    top: 7%;
 }
 
 .pokemon_img{
@@ -33,6 +50,31 @@ main{
     text-transform: capitalize;
     right: 25%;
     bottom: 41%;
+    display: flex;
+    align-items: center;
+}
+
+.pokeball{
+    width: 26px;
+    transform: rotate(0deg);
+    animation: rotate 1s ease-in-out infinite;
+    animation-duration: infinite;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(720deg);
+    }
+
+
 }
 
 .input_search{
