@@ -5,7 +5,11 @@ const next = document.querySelector(".next")
 const previous = document.querySelector(".previous")
 const form = document.querySelector(".form")
 const input_search = document.querySelector(".input_search")
+const pokeball = document.querySelector(".pokeball")
 let pokemon_selector = 1
+
+pokeball.classList.add("hide")
+
 
 const fetchPokemon = async (pokemon) => {
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
@@ -17,10 +21,12 @@ const fetchPokemon = async (pokemon) => {
 }
 
 const renderPokemon = async (pokemon) => {
+    pokeball.classList.remove("hide")
     pokemon_id.innerHTML = ''
     pokemon_name.innerHTML = "Pesquisando.."
     
     const data = await fetchPokemon(pokemon);
+    pokeball.classList.add("hide")
 
     if(data){
 
@@ -64,3 +70,4 @@ previous.addEventListener("click", () => {
 
 renderPokemon(pokemon_selector)
 
+pokemon_name.innerHTML = "images/594337-200.png"
